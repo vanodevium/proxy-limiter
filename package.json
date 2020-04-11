@@ -1,0 +1,30 @@
+{
+  "name": "anyproxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "WTFPL",
+  "author": {
+    "email": "webdevium@gmail.com",
+    "name": "Vano Devium"
+  },
+  "dependencies": {
+    "anyproxy": "4.1.2",
+    "async-redis": "1.1.7",
+    "dotenv": "8.2.0",
+    "knex": "0.20.7",
+    "mysql2": "2.1.0",
+    "objection": "2.1.2",
+    "proxy-agent": "3.1.1",
+    "sqlite3": "4.1.1",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "@types/knex": "0.16.1",
+    "nodemon": "2.0.2"
+  },
+  "scripts": {
+    "certificate": "./node_modules/.bin/anyproxy-ca",
+    "cp:env": "cp .env.example .env",
+    "local:db": "touch database.sqlite"
+  }
+}
